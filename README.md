@@ -13,17 +13,17 @@ Follow this [XPosed tutorial](https://github.com/rovo89/XposedBridge/wiki/Develo
     - **provided** fileTree(dir: 'libs', include: ['*.jar'])
     - **compiled** fileTree(dir: 'libs', include: ['*.jar'])
 3. In `manifest.xml`
-        ```xml
-        <meta-data
-            android:name="xposedmodule"
-            android:value="true" />
-        <meta-data
-            android:name="xposeddescription"
-            android:value="an android daemon to control android root device via outside commands" />
-        <meta-data
-            android:name="xposedminversion"
-            android:value="53" />
-         ```
+       ```xml
+       <meta-data
+           android:name="xposedmodule"
+           android:value="true" />
+       <meta-data
+           android:name="xposeddescription"
+           android:value="an android daemon to control android root device via outside commands" />
+       <meta-data
+           android:name="xposedminversion"
+           android:value="53" />
+        ```
 4. create a class that implement interface `IXposedHookLoadPackage`. All hook actions is begun from here. 
 5. create file `xposed_init` in `asset` folder, pointing to class at step 4 as entry point for XPose module. 
 6. After running app success, enable app in `XPosed Installer` then restart for applying new change. 
