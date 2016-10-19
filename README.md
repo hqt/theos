@@ -37,4 +37,3 @@ Follow this [XPosed tutorial](https://github.com/rovo89/XposedBridge/wiki/Develo
 
 #Some common problems
 TBD
-
