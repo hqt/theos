@@ -13,6 +13,7 @@ Follow this [XPosed tutorial](https://github.com/rovo89/XposedBridge/wiki/Develo
     - **provided** fileTree(dir: 'libs', include: ['*.jar'])
     - **compiled** fileTree(dir: 'libs', include: ['*.jar'])
 3. In `manifest.xml`
+
    ```xml
        <meta-data
            android:name="xposedmodule"
